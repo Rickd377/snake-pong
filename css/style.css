@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+canvas {
+  background: linear-gradient(90deg, hsl(0, 100%, 75%) 49.5%, white 49.5% 50.5%, hsl(236, 100%, 75%) 50.5%);
+}
