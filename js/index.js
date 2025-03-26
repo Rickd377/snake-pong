@@ -15,7 +15,7 @@ let boxHeightRight = paddleHeightRight / numBoxes;
 let leftPaddle = { x: 10, y: (canvas.height - paddleHeightLeft) / 2, speed: 5 };
 let rightPaddle = { x: canvas.width - paddleWidth - 10, y: (canvas.height - paddleHeightRight) / 2, speed: 5 };
 
-let ball = { x: canvas.width / 2, y: canvas.height / 2, vx: 5, vy: 3 };
+let ball = { x: canvas.width / 2, y: canvas.height / 2, vx: 7, vy: 4 };
 let score = { left: 0, right: 0 };
 
 let keys = {};
@@ -64,8 +64,8 @@ function shrinkPaddle(player) {
 function resetGame() {
   ball.x = canvas.width / 2;
   ball.y = canvas.height / 2;
-  ball.vx = Math.random() < 0.5 ? 5 : -5;
-  ball.vy = Math.random() * 6 - 3;
+  ball.vx = Math.random() < 0.5 ? 7 : -7;
+  ball.vy = Math.random() * 0.5 ? 4 : -4;
 }
 
 function draw() {
